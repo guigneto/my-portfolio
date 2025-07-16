@@ -15,10 +15,6 @@ const navLinks = [
     path: "#about",
   },
   {
-    title: "Projects",
-    path: "#projects",
-  },
-  {
     title: "Contact",
     path: "#contact",
   },
@@ -34,7 +30,7 @@ const Navbar = () => {
           href="/"
           className="text-2xl md:text-5xl text-white font-semibold"
         >
-          LOGO
+          GuiDev
         </Link>
         <div className="block md:hidden">
           {!navbarOpen ? (
@@ -57,17 +53,9 @@ const Navbar = () => {
         </div>
         <div className="hidden md:block md:w-auto" id="navbar-default">
           <ul className="font-medium flex p-4 md:p-0  rounded-lg flex-row md:space-x-8 mt-0">
-            {navLinks.map((link) => {
-              return (
-                <li>
-                  <NavLink
-                    key={link.title}
-                    title={link.title}
-                    href={link.path}
-                  />
-                </li>
-              );
-            })}
+            <NavLink href="/" title="Home" />
+            <NavLink href="about" title="About" />
+            <NavLink href="contact" title="Contact" />
           </ul>
         </div>
       </div>
