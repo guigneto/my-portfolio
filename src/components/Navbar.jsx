@@ -7,10 +7,6 @@ import MenuOverlay from "./MenuOverlay";
 
 const navLinks = [
   {
-    title: "Home",
-    path: "/",
-  },
-  {
     title: "About",
     path: "#about",
   },
@@ -53,8 +49,7 @@ const Navbar = () => {
         </div>
         <div className="hidden md:block md:w-auto" id="navbar-default">
           <ul className="font-medium flex p-4 md:p-0  rounded-lg flex-row md:space-x-8 mt-0">
-            <NavLink href="/" title="Home" />
-            <NavLink href="about" title="About" />
+            <NavLink href="/" title="About" />
             <NavLink href="contact" title="Contact" />
           </ul>
         </div>

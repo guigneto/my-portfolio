@@ -1,7 +1,10 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
+import GithubIcon from "../../public/github-icon.svg";
+import LinkedinIcon from "../../public/linkedin-icon.svg";
 
 const HeroSection = () => {
   return (
@@ -29,18 +32,19 @@ const HeroSection = () => {
             I'm a passionate web developer with a focus on creating dynamic and
             responsive web applications.
           </p>
-          <div>
-            <a 
-            href="https://github.com/guigneto" target="_blank"
-            className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-yellow-500 via-red-500 to-orange-500 hover:bg-slate-200 text-white">
-              GitHub
-            </a>
-            <a href="https://www.linkedin.com/in/guigneto/" target="_blank"
-            className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-yellow-500 via-red-500 to-orange-500 hover:bg-slate-200 text-white">LinkedIn</a>
+          <div className="socials flex flex-row gap-2 items-center justify-center lg:justify-start">
+            <Link href="https://github.com/guigneto" target="_blank">
+              <Image src={GithubIcon} alt="Github Icon" />
+            </Link>
+            <Link href="https://www.linkedin.com/in/guigneto/" target="_blank">
+              <Image src={LinkedinIcon} alt="Linkedin Icon" />
+          </Link>
 
-            <button 
-            className="px-1 py-1  sm:w-fit rounded-full bg-gradient-to-br from-yellow-500 via-red-500 to-orange-500 hover:bg-slate-800 text-white mt-3 hover:cursor-pointer"
-            onClick={() => window.open("/path/to/cv.pdf", "_blank")}>
+
+            <button
+              className="px-1 py-1  sm:w-fit rounded-full bg-gradient-to-br from-yellow-500 via-red-500 to-orange-500 hover:bg-slate-800 text-white  hover:cursor-pointer"
+              onClick={() => window.open("/path/to/cv.pdf", "_blank")}
+            >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                 Download CV
               </span>
