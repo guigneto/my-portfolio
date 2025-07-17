@@ -13,7 +13,7 @@ const HeroSection = () => {
         <div className="col-span-7 place-self-center text-center sm:text-left">
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-600">
-              Hello, I'm{" "}
+              Olá, eu sou{" "}
             </span>
             <br></br>
             <TypeAnimation
@@ -29,8 +29,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            I'm a passionate web developer with a focus on creating dynamic and
-            responsive web applications.
+            Um apaixonado por desenvolvimento web e por tudo que envolve criar, aprender e evoluir.
           </p>
           <div className="socials flex flex-row gap-2 items-center justify-center lg:justify-start">
             <Link href="https://github.com/guigneto" target="_blank">
@@ -43,7 +42,7 @@ const HeroSection = () => {
 
             <button
               className="px-1 py-1  sm:w-fit rounded-full bg-gradient-to-br from-yellow-500 via-red-500 to-orange-500 hover:bg-slate-800 text-white  hover:cursor-pointer"
-              onClick={() => window.open("/path/to/cv.pdf", "_blank")}
+              onClick={() => window.open("/Guilherme_Gomes_CV.pdf", "_blank")}
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                 Download CV

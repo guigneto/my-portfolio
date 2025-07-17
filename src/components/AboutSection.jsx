@@ -5,7 +5,7 @@ import TabButton from "./TabButton";
 
 const TAB_DATA = [
   {
-    title: "Skills",
+    title: "Habilidades",
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
@@ -16,20 +16,20 @@ const TAB_DATA = [
     ),
   },
   {
-    title: "Education",
+    title: "Formação",
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Federal Institute of Espírito Santo</li>
+        <li>Instituto Federal do Espírito Santo</li>
       </ul>
     ),
   },
   {
-    title: "Experience",
+    title: "Experiência",
     id: "experience",
     content: (
       <ul className="list-disc pl-2">
-        <li>IT intern at Innova Soluções</li>
+        <li>Estagiário de TI na Innova Soluções</li>
       </ul>
     ),
   },
@@ -54,32 +54,28 @@ const AboutSection = () => {
         width={500} 
         height={500}/>
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-          <p className="text-white texxt-base md:text-lg">
-            I am a passionate web developer with a focus on creating dynamic and
-            responsive web applications. My journey in web development has
-            equipped me with a diverse skill set, including expertise in
-            Next.js, Java, and PostgreSQL. I thrive on challenges and am always
-            eager to learn new technologies to enhance my craft.
+          <h2 className="text-4xl font-bold text-white mb-4">Sobre mim</h2>
+          <p className="text-white text-base md:text-lg">
+            Sou um desenvolvedor web apaixonado por tecnologia e movido por desafios. Acredito que a melhor forma de evoluir é colocar a mão na massa, e é assim que venho construindo minha jornada no desenvolvimento. Gosto de transformar problemas em soluções funcionais e intuitivas, sempre com foco na experiência do usuário.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
             >
-              Skills
+              Habilidades
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
             >
-              Education
+              Formação
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("experience")}
               active={tab === "experience"}
             >
-              Experience
+              Experiência
             </TabButton>
           </div>
           <div className="mt-8">

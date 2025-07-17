@@ -1,26 +1,31 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
 
-const navLinks = [
+
+const Navbar = () => {
+  const [whatsMessage, setWhatsMessage] = useState("");
+  const [navbarOpen, setNavbarOpen] = useState(false);
+
+  useEffect(() => {
+    fetch("/whatsapp_message.txt")
+      .then((res) => res.text())
+      .then((text) => setWhatsMessage(text));
+  }, []);
+
+  const navLinks = [
   {
-    title: "About",
-    path: "#about",
-  },
-  {
-    title: "Contact",
-    path: "#contact",
+    title: "Contato",
+    path: whatsMessage,
   },
 ];
 
-const Navbar = () => {
-  const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-90">
+    <nav className="fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-90 ">
       <div className="flex flex-wrap items-center justify-between mx-auto p-8">
         <Link
           href="/"
@@ -49,8 +54,8 @@ const Navbar = () => {
         </div>
         <div className="hidden md:block md:w-auto" id="navbar-default">
           <ul className="font-medium flex p-4 md:p-0  rounded-lg flex-row md:space-x-8 mt-0">
-            <NavLink href="/" title="About" />
-            <NavLink href="contact" title="Contact" />
+            {/* <NavLink href="/" title="About" /> */}
+            <NavLink href={whatsMessage} title="Contato" target="_blank" />
           </ul>
         </div>
       </div>
