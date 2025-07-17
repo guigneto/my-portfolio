@@ -9,7 +9,9 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>Next.js</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>TypeScript</li>
         <li>Java</li>
         <li>PostgreSQL</li>
       </ul>
@@ -20,7 +22,13 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Instituto Federal do Espírito Santo</li>
+        <li>
+          Bacharelado em Sistemas de Informação - IFES
+          <br />
+          <span className="text-gray-400 text-sm italic">
+            (2022 - 2026)
+          </span>
+        </li>
       </ul>
     ),
   },
@@ -29,7 +37,12 @@ const TAB_DATA = [
     id: "experience",
     content: (
       <ul className="list-disc pl-2">
-        <li>Estagiário de TI na Innova Soluções</li>
+        <li>Estagiário de TI na Innova Soluções
+          <br />
+          <span className="text-gray-400 text-sm italic">
+            (set 2024 - o momento)
+          </span>
+        </li>
       </ul>
     ),
   },
