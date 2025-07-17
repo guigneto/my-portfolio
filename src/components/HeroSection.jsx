@@ -44,8 +44,8 @@ const HeroSection = () => {
               className="px-1 py-1  sm:w-fit rounded-full bg-gradient-to-br from-yellow-500 via-red-500 to-orange-500 hover:bg-slate-800 text-white  hover:cursor-pointer"
               onClick={() => window.open("/Guilherme_Gomes_CV.pdf", "_blank")}
             >
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                Download CV
+              <span className="block font-bold bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+                Meu Currículo
               </span>
             </button>
           </div>
