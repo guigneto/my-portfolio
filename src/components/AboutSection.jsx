@@ -10,10 +10,10 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>Express</li>
-        <li>React</li>
         <li>Node.js</li>
-        <li>TypeScript</li>
-        <li>Java</li>
+        <li>Next.js</li>
+        <li>Laravel</li>
+        <li>PHP</li>
         <li>MongoDB</li>
         <li>PostgreSQL</li>
       </ul>
@@ -28,7 +28,7 @@ const TAB_DATA = [
           Bacharelado em Sistemas de Informação - IFES
           <br />
           <span className="text-gray-400 text-sm italic">
-            (2022 - 2026)
+            (2023 - 2026)
           </span>
         </li>
       </ul>
@@ -39,10 +39,25 @@ const TAB_DATA = [
     id: "experience",
     content: (
       <ul className="list-disc pl-2">
-        <li>Estagiário de TI na Innova Soluções
+        <li>
+          Desenvolvedor Full Stack
           <br />
           <span className="text-gray-400 text-sm italic">
-            (set 2024 - o momento)
+            Innova Soluções - Vila Velha, ES
+          </span>
+          <br />
+          <span className="text-gray-400 text-sm italic">
+            (nov 2025 - presente)
+          </span>
+        </li>
+        <li>Suporte Técnico
+          <br />
+          <span className="text-gray-400 text-sm italic">
+            Innova Soluções - Vila Velha, ES
+          </span>
+          <br />
+          <span className="text-gray-400 text-sm italic">
+            (set 2024 - out 2025)
           </span>
         </li>
       </ul>
